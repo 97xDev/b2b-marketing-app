@@ -18,7 +18,9 @@ export default function Blog() {
             height={300}
             className=" h-80 object-cover rounded-lg"
           />
-          <h1 className="my-2 text-4xl font-bold mt-4">{featuredPost.title}</h1>
+          <h1 className="my-2 text-4xl text-gray-900 font-bold mt-4">
+            {featuredPost.title}
+          </h1>
           <p className="text-gray-600 mt-2">{featuredPost.subtitle}</p>
           <Link
             href={"/blog/" + featuredPost.slug}
@@ -28,7 +30,7 @@ export default function Blog() {
           </Link>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold">New Articles</h2>
+          <h2 className="text-2xl text-gray-900 font-semibold">New Articles</h2>
           <ul className="mt-4 space-y-2">
             {newPosts.map((post) => (
               <li key={post.id}>
@@ -46,7 +48,7 @@ export default function Blog() {
       </div>
       <div className="mt-8 h-[2px] bg-blue-600" />
       {/* All Articles Section */}
-      <h2 className="text-3xl font-bold mt-10">All Articles</h2>
+      <h2 className="text-3xl text-gray-900 font-bold mt-10">All Articles</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 auto-rows-fr">
         {posts.map((post) => (
           <div key={post.id} className="flex flex-col p-4 rounded-lg">
@@ -57,7 +59,7 @@ export default function Blog() {
               height={300}
               className="w-full h-48 object-cover rounded-lg"
             />
-            <h2 className="leading-none text-xl font-bold mt-4">
+            <h2 className="leading-none text-xl text-gray-900 font-bold mt-4">
               {post.title}
             </h2>
             <p className="text-gray-600 my-4">{post.subtitle}</p>

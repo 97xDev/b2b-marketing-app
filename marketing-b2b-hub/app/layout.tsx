@@ -8,9 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-100 text-gray-900 min-h-screen">
+      <body className="bg-gray-100 text-gray-200 min-h-screen">
         <Navbar />
-        <main className="container mx-auto p-8">{children}</main>
+        <main className="w-full">{children}</main>
       </body>
     </html>
   );

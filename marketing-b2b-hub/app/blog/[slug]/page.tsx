@@ -45,7 +45,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
             <Link
               key={tag}
               href={`/tags/${tag}`}
-              className="text-gray-800 px-2 py-1 rounded text-sm hover:underline transition"
+              className="text-blue-700 px-2 py-1 rounded text-sm hover:underline transition"
             >
               #{tag}
             </Link>
